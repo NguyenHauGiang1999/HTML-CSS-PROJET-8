@@ -1,4 +1,12 @@
 /* PC */
+
+.section__heading{
+    font-size: 3.6rem;
+}
+
+.section__desc{
+    font-size: 1.8rem;
+}
 @media screen and (min-width: 992px) {
     .menu__navbar{
         display: none;
@@ -189,14 +197,13 @@
     }
 
     .myhere__list{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 15px;
+        display: flex;
+        gap: 10px;
     }
 
-    .myhere__list .myhere__img{
-        width: 100%;
-        height: 100%;
+    .myhere__img{
+        /* width: 100%;
+        height: 100%; */
     }
 
     .footer__top{
@@ -219,24 +226,40 @@
 
 /* mobile */
 @media screen and (max-width: 767px) {
-    .hero{
-        max-width: 350px;
-    }
-    
     .hero__inner{
         flex-direction: column;
     }
 
+    .hero__info{
+        width: 100%;
+    }
+
     .hero__heading{
+        width: 260px;
         font-size: 4.2rem;
     }
 
     .hero__desc{
+        width: 318px;
         font-size: 1.6rem;
     }
 
+    .hero__img{
+        max-width: 259px;
+        max-height: 355px;
+    }
+
     .hero__button{
-        min-width: 263px;
+        width: 263px;
+        flex-shrink: 1;
+    }
+
+    .hero__btn{
+        width: 147px;
+    }
+
+    .hero__button-note{
+        font-size: 1.6rem;
     }
 
     .hero__info-list{
@@ -244,126 +267,69 @@
     }
 
     .hero__info-follow{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+        flex-shrink: 0;
     }
 
-    .hero__info-icon{
-        width: 124px;
-    }
-
-    .hero__icon {
+    .hero__icon{
         width: 31px;
         height: 31px;
     }
 
-    .hero__media .hero__img{
-        max-width: 259px;
-        height: 355px;
+    .clients__right{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 336px;
+        padding-top: 42px;
+        
     }
 
-    .clients{
-        width: 336px;
+    .clients__left{
+        margin: 0 auto;
+        width: 169px;
     }
 
     .clients__heading{
-        min-width: 169px;
         font-size: 2.8rem;
     }
 
-    .clients__right{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 36px;
-    }
-
-    .special{
-        width: 350px;
-    }
-
-    .special__heading{
-        min-width: 181px;
-        font-size: 3.6rem;
+    .special__inner{
+        max-width: 350px;
     }
 
     .special__desc{
         width: 350px;
-        font-size: 1.6rem;
     }
 
     .spicial__bottom{
         display: grid;
-        grid-template-columns: 1fr;
-    }
-    
-    .spicial__bottom .col-lg-3:nth-of-type(2){
-        display: none;
-    }
-
-     spicial__bottom .col-lg-3:nth-of-type(3){
-        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        overflow: hidden;
+        flex: 1 0 auto;
+        margin: 50px 0 0 auto;
     }
 
-    .projects{
-        width: 351px;
-    }
-
-    .projects__heading{
-        width: 301px;
-        font-size: 3.6rem;
-    }
-
-    .projects__desc{
+    .projects__inner{
         width: 350px;
-        font-size: 1.6rem;
-    }
-
-    .projects__item{
-        width: 350px;
-        height: 170px;
-    }
-
-    .projects__left{
-        width: inherit;
-        height: inherit;
-        padding: 20px 0;
     }
 
     .projects__item-heading{
-        min-width: 150px;
         font-size: 2.4rem;
-        
-        
     }
 
-    .projects__item-desc{
-        width: 176px;
-        font-size: 1.4rem;
-    }
-
-    .projects__active{
-        min-width: 89px;
-        font-size: 1.6rem;
-        
-    }
-
-    .projects__right img {
+    .projects__img{
         width: 122px;
-        height: 93px;
     }
 
-    .projects__btn{
-        width: 154px;
-        height: 56px;
-        font-size: 1.6rem;
-        font-weight: 700;
-    }
-    
-    .design{
+    .design__inner,
+    .people__inner,
+    .talk__inner,
+    .footer__inner
+    {
         width: 350px;
     }
 
     .design__hey{
-        width: 106px;
         font-size: 2rem;
     }
 
@@ -372,197 +338,147 @@
         height: 18px;
     }
 
-    .design__heading{
-        min-width: 315px;
-        font-size: 3.6rem;
-    }
-
     .design__desc{
-        min-width: 350px;
-        font-size: 1.6rem;
-    }
-
-    .design__list{
-        width: 74px;
-        height: 91px;
-    }
-
-    .design__list .design__list-price{
-        width: 47px;
-        height: 42px;
-        font-size: 3rem;
-        margin-left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .design__list .design__list-desc{
-        width: 74px;
-        height: 44px;
-        font-size: 1.6rem;
+        width: 350px;
     }
 
     .design__row{
-        width: 318px;
-        height: 91px;
+        width: 100%;
     }
 
-   .projects__media{
-    display: none;
-   }
+    .design__list-price{
+        font-size: 3rem;
+    }
 
-   .people{
-    width: 350px;
-   }
-
-   .people__inner{
-    width: 350px;
-   }
-
-   .people__heading{
-    width: 283px;
-    font-size: 3.6rem;
-    margin-left: 50%;
-    transform: translateX(-50%);
-   }
-
-   .people__desc, 
-   .people__note{
-    width: 350px;
-    font-size: 1.6rem;
-   }
-
-   .people__info-img{
-    width: 40px;
-    height: 40px;
-   }
-
-   .people__icon-name{
-    width: 86px;
-    font-size: 2.4rem;
-   }
-
-   .few{
-    width: 370px;
-   }
-
-   .few__heading{
-    width: 316px;
-    font-size: 3.6rem;
-   }
-
-   .few__item{
-    width: 370px;
-    height: 140px;
-   }
-
-   
-   .few__item-heading{
-    width: 265px;
-    font-size: 2.4rem;
-    flex-shrink: 0;
-    color: #080415;
-   }
-
-   .few__item-desc{
-    width: 316px;
-    font-size: 1.6rem;
-   }
-
-   .few-item__control{
-    width: 33px;
-    height: 33px;  
-   }
-
-   .myhere{
-    width: 350px;
-   }
-
-   .myhere__top{
-    width: 350px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-   }
-
-   .myhere__heading{
-    width: 251px;
-    font-size: 3.6rem;
-   }
-
-   .myhere__desc{
-    width: 350px;
-    font-size: 1.6rem;
-   }
-
-   .myhere__link{
-    width: 156px;
-    font-size: 2rem;
-   }
-
-   .myhere__list{
-    display: none;
-   }
-
-   .myhere__thumb img{
-    max-width: 352px;
-    max-height: 503px;
-    object-fit: cover;
-   }
-
-   .talk{
-    width: 394px;
-   }
-
-   .talk__icon{
-    width: 48px;
-    height: 48px;
-   }
-
-   .talk__heading{
-    font-size: 3.6rem;
-   }
-
-   .talk__desc{
-    width: 350px;
-    font-size: 1.6rem;
-   }
-
-   .talk__btn{
-    width: 147px;
-    font-size: 1.6rem;
-   }
-
-   .footer__top{
-    flex-direction: column;
-   }
-
-   .footer__logo{
-    order: 3;
-    margin-top: 64px;
-   }
-
-   .footer__logo-heart img{
-    width: 46px;
-    height: 46px;
-   }
-
-   .footer__logo-info{
-    font-size: 2.2rem;
-   }
-   
-   .footer .img__thumb{
-    order: 1;
-   }
-   
-   .footer .navbar{
-    order: 2;
-    margin-top: 20px;
-   }
-
-    .footer .navbar .navbar__item{
+    .design__list-desc{
+        width: 74px;
         font-size: 1.6rem;
     }
 
-   .footer__bottom{
-    width: 100%;
-   }
+    .people__desc{
+        width: 350px;
+    }
+
+    .people__note{
+        width: 350px;
+        font-size: 1.8rem;
+    }
+    
+    .few__inner{
+        width: 370px;
+    }
+
+    .few__item-body{
+        width: 370px;
+    }
+
+    .few__heading{
+        width: 316px;
+    }
+
+    .few__item-heading .question__heading{
+        width: 256px;
+        font-size:  2.4rem;
+    }
+
+    .few-item__control{
+        width: 33px;
+        height: 33px;
+        flex-shrink: 1;
+    }
+
+    .myhere__top{
+        align-items: center;
+        width: 350px;
+    }
+
+    .myhere__heading{
+        text-align: center;
+    }
+
+    .myhere__desc{
+        width: 350px;
+    }
+
+    .myhere__link{
+        font-size: 2rem;
+    }
+
+    .myhere__list{
+        overflow: hidden;
+        width: 350px;
+    }
+
+    .myhere__img{
+        width: 100%;
+        flex: 1 0 auto;
+    }
+    
+    .talk__icon{
+        width: 48px;
+        height: 48px;
+    }
+
+    .talk__heading{ 
+        text-align: center;
+        line-height: 1.16;
+    }
+
+    .talk__desc{
+        width: 350px;
+    }
+
+    .talk__btn{
+        width: 147px;
+    }
+
+    .footer__inner{
+        width: 351px;
+    }
+
+    .footer__top{
+        flex-direction: column;
+    }
+
+    .footer__logo{
+        order: 3;
+        margin-top: 58px;
+    }
+
+    .navbar{
+        margin-top: 20px;
+    }
+
+    
+    .navbar__list{
+        flex-direction: column;
+    }
+
+    .navbar__list .navbar__item{
+        font-size: 1.6rem;
+    }
+
+    .bottom__copyright{
+        flex-direction: column;
+        width: inherit;
+    }
+
+
+    .footer__info{
+        width: 336px;
+        text-align: center;
+        order: 2;
+        flex-shrink: 0;
+    }
+    
+
+
+    .footer__policy .privacy,
+    .footer__policy .policy{
+        flex-shrink: 0;
+    }
+
+    .bottom__line{
+        order: 2;
+    }
 }

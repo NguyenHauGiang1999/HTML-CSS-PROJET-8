@@ -435,19 +435,20 @@ a:hover{
     font-weight: 500;
     line-height: 1.17;
     text-align: center; 
-    margin-top: 10px;
+    margin: 10px 0 15px 0;
 }
 
 .design__desc{
-    min-width: 570px;
+    width: 570px;
     text-align: center;
-    margin-top: 15px;
     color: #51586A;
-    text-align: center;
     font-family: "DM Sans";
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.66;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
 }
 
 .design__row{
@@ -770,7 +771,9 @@ a:hover{
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 1.17;
-    margin: 0 auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 .myhere__desc{
@@ -793,18 +796,20 @@ a:hover{
 }
 
 .myhere__list{
+    display: flex;
+    justify-content: space-between;
     margin-top: 80px;
 }
 
-.myhere__thumb{
+.myhere__img{
     width: 370px;
     height: 529px;
     transition: 0.5s;
 }
 
-.myhere__thumb:hover{
+.myhere__list .myhere__img:hover{
     scale: 1.1;
-}   
+}    
 
 .talk__inner{
     background: #FBFAFF;
@@ -896,4 +901,16 @@ a:hover{
     font-weight: 400;
     line-height: 1.66; 
     margin-top: 18px;
+}
+
+.footer__policy .policy{
+    margin-left: 23px;
+}
+
+.footer__policy .policy::before{
+    content: "";
+    height: 14px;
+    border: 1px solid #525771;
+    opacity: 0.6;
+    margin-right: 13px;
 }

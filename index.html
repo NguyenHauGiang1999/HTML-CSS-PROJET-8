@@ -86,7 +86,9 @@
             hidden
         >
 
-        <lable for="menu__checkbox" class="menu__overlay"></lable>
+        <lable for="menu__checkbox" class="menu__overlay">
+            
+        </lable>
 
         <div class="menu__tab">
             <ul class="menu__navbar">
@@ -155,7 +157,7 @@
                         <h2 class="section__heading clients__heading">Meet my recent clients</h2>
                     </div>
                 <div class="row clients__right">
-                    <div class="col-lg-3 animate__animated" data-aos="fade-down">
+                    <div class="col-lg-3  animate__animated" data-aos="fade-down">
                         <div class="card-item">
                             <img src="./assets/icon/clients-1.svg" alt="" class="clients__img">
                             <span>Google</span>
@@ -224,7 +226,7 @@
                     </div>
 
                     <div class="row spicial__bottom">
-                        <div class="col-lg-3 ">
+                        <div class="col-lg-3">
                             <div class="special__item">
                                 <div class="special__thumb">
                                     <img src="./assets/icon/special-1.svg" alt="" class="special__img">
@@ -234,7 +236,7 @@
                             </div>
                         </div>
 
-                    <div class="col-lg-3 ">
+                    <div class="col-lg-3">
                         <div class="special__item">
                             <div class="special__thumb">
                                 <img src="./assets/icon/special-2.svg" alt="" class="special__img">
@@ -244,7 +246,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 ">
+                    <div class="col-lg-3">
                         <div class="special__item">
                             <div class="special__thumb">
                                 <img src="./assets/icon/special-3.svg" alt="" class="special__img">
@@ -272,7 +274,7 @@
                     </div> 
 
                     <div class="row projects__row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-12">
                             <div class="projects__item">
                                 <div class="projects__left">
                                     <h3 class="section__heading projects__item-heading">Wally Website</h3>
@@ -286,7 +288,7 @@
                             </div>
                         </div>           
                         
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-12">
                             <div class="projects__item">
                                 <div class="projects__left">
                                     <h3 class="section__heading projects__item-heading">Banking App</h3>
@@ -300,7 +302,7 @@
                             </div>
                         </div>   
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-12">
                             <div class="projects__item">
                                 <div class="projects__left">
                                     <h3 class="section__heading projects__item-heading">Web App</h3>
@@ -314,7 +316,7 @@
                             </div>
                         </div>   
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-12">
                             <div class="projects__item">
                                 <div class="projects__left">
                                     <h3 class="section__heading projects__item-heading">Oculus Website</h3>
@@ -389,7 +391,7 @@
                    <div class="people__bottom">
                     <h2 class="section__heading people__heading">What people says</h2>
                     <p class="section__desc people__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
-                    <p class="people__note">“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.”</p>
+                    <p class="section __desc people__note">“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.”</p>
                    </div>
 
                    <div class="people__info">
@@ -423,14 +425,15 @@
 
         <section id="Contact" class="few">
             <div class="container">
-                <h2 class="section__heading few__heading">A few questions clients normally ask me</h2>
+                <div class="few__inner">
+                    <h2 class="section__heading few__heading">A few questions clients normally ask me</h2>
                 
                 <div class="few__list">
                     <!-- Item 1 -->
                     <div class="few__item">
                         <div class="few__item-body">
                             <h3 class="few__item-heading">
-                                <label for="question-1">
+                                <label for="question-1" class="question__heading">
                                     What is your  hourly rate?
                                 </label>
                             </h3>
@@ -459,7 +462,7 @@
                      <div class="few__item">
                         <div class="few__item-body">
                             <h3 class="few__item-heading">
-                                <label for="question-2">
+                                <label for="question-2" class="question__heading">
                                     What is your  hourly rate?
                                 </label>
                             </h3>
@@ -489,7 +492,7 @@
                     <div class="few__item">
                         <div class="few__item-body">
                             <h3 class="few__item-heading">
-                                <label for="question-3">
+                                <label for="question-3" class="question__heading">
                                     What is your  hourly rate?
                                 </label>
                             </h3>
@@ -519,7 +522,7 @@
                     <div class="few__item">
                         <div class="few__item-body">
                             <h3 class="few__item-heading">
-                                <label for="question-4">
+                                <label for="question-4" class="question__heading">
                                     What is your  hourly rate?
                                 </label>
                             </h3>
@@ -548,7 +551,7 @@
                      <div class="few__item">
                         <div class="few__item-body">
                             <h3 class="few__item-heading">
-                                <label for="question-5">
+                                <label for="question-5" class="question__heading">
                                     What is your  hourly rate?
                                 </label>
                             </h3>
@@ -573,6 +576,7 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
         </section>
 
@@ -584,18 +588,12 @@
                     <a href="#!" class="myhere__link">@interaction_arif</a>
                 </div>
 
-                <div class="row myhere__list">
-                    <div class="col-lg-4 myhere__thumb">
+                <div class="myhere__list">
                         <img src="./assets/img/myhere.png" alt="" class="myhere__img">
-                    </div>
-
-                    <div class="col-lg-4 myhere__thumb">
+                    
                         <img src="./assets/img/myhere-2.png" alt="" class="myhere__img">
-                    </div>
-
-                    <div class="col-lg-4 myhere__thumb">
+                    
                         <img src="./assets/img/myhere-3.png" alt="" class="myhere__img">
-                    </div>
                 </div>
             </div>
         </section>
@@ -615,17 +613,17 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
-                <div class="footer__top">
-                    <div class="footer__logo">
-                        <div class="footer__logo-heart">
-                            <img src="./assets/icon/image 230.svg" alt="" class="logo">
+                    <div class="footer__top">
+                        <div class="footer__logo">
+                            <div class="footer__logo-heart">
+                                <img src="./assets/icon/image 230.svg" alt="" class="logo">
+                            </div>
+                            <a href="#!">
+                                <div class="footer__logo-info">hi@arif.interactive</div>
+                            </a>
                         </div>
-                        <a href="#!">
-                            <div class="footer__logo-info">hi@arif.interactive</div>
-                        </a>
-                    </div>
-                        <img src="./assets/img/Memoji Boys 13-24.png" alt="" class="img__thumb">
-                <div class="navbar">
+                            <img src="./assets/img/Memoji Boys 13-24.png" alt="" class="img__thumb">
+                    <div class="navbar">
                         <ul class="navbar__list">
                             <a href="">
                                 <li class="navbar__item">Projects</li>
